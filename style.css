@@ -1,0 +1,328 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(imagenes/different-car-accessories-assortment.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.nav{
+    background: rgba(209, 146, 30, 0.63);;
+    height: 80px;
+    color: #fff;
+}
+.nav__container{
+    display: flex;
+    height: 100%;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav__title{
+    font-size: 2em;
+    font-weight: 900;
+}
+.nav__menu{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    font-size: 30px;
+}
+.nav__item{
+    color: white;
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.nav__item:after{
+    content: "";
+    display: block;
+    background: #fff;
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path 0.3s;
+}
+.nav__item:hover{
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav__input:checked + .nav__menu{
+    background: #9e7722;
+}
+
+.nav__label, .nav__input{
+    display: none;
+}
+.section1{
+    text-align: center;
+    margin: 20px
+}
+.section1__title{
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+    background-color: rgba(209, 146, 30, 0.829);
+    border-radius: 20px;
+    width: 650px;
+    margin: 0 auto;
+    padding: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.section1__img{
+    margin: 20px;
+    width: 150px;
+    height: 140px;
+    background-color: rgba(255, 166, 0, 0.384);
+    border-radius: 20px;
+}
+.section1__img:hover{
+    background-color: rgba(255, 166, 0, 0.986);
+}
+.section2{
+    text-align: center;
+    margin: 10px;
+}
+.section2__paragraph{
+    font-size: 16px;
+    background-color:rgba(209, 146, 30, 0.829);
+    color: white;
+    padding: 2px;
+    border-radius: 20px;;
+    width: 500px;
+    margin: 0 auto;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+} 
+.slider-frame{
+    width: 378px;
+    height: 278px;
+    margin: 15px auto 0;
+    overflow: hidden;
+    border: 2px solid orange;
+    border-radius: 50%;
+}
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 21s infinite alternate ease-in-out;
+}
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+}
+.slider-frame__img{
+    width: 378px;
+    height: 278px;
+}
+
+@keyframes slider  {
+    0% {margin-left: 0%;}
+    14.28% {margin-left: 0%;}
+
+    14.28% {margin-left: -100%;}
+    28.56% {margin-left: -100%;}
+
+    28.56% {margin-left: -200%;}
+    42.84% {margin-left: -200%;}
+
+    42.84% {margin-left: -300%;}
+    57.12% {margin-left: -300%;}
+
+    57.12% {margin-left: -400%;}
+    71.40% {margin-left: -400%;}
+
+    71.40% {margin-left: -500%;}
+    85.68% {margin-left: -500%;}
+
+    85.68% {margin-left: -600%;}
+    100% {margin-left: -600%;}
+}
+
+footer{
+    /*height: 150px;
+    position: relative;*/
+    text-align: center;
+    color: white;
+}
+.footer__h2{
+    /*position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    margin-top: 50px;
+}
+
+/* PAGINA DEL INVENTARIO */
+
+.product-list{
+    width: 80%;
+    height: auto;
+    border: 1px solid orange;
+    margin: 20px auto 0px;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.658);
+    font-size: 12.5px;
+    font-weight: bold;
+}
+.product-list ul{
+    list-style:inside;
+}
+.product-list li{
+    margin-top: 6px;
+    color: rgb(2, 0, 0);
+    font-family:Arial, Helvetica, sans-serif
+}
+.price{
+    color: red;
+}
+
+/* PAGINA DE CONTACTO */
+
+.contacto{
+    padding: 22px;
+}
+.contacto__title{
+    text-align: center;
+    color: white;
+    background-color: rgba(209, 146, 30, 0.829);
+    width: 500px;
+    margin: 0 auto;
+    font-size: 20px;
+    border-radius: 20px;
+}
+.campos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.campo__input{
+    margin: 20px 0;
+    display: block;
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+}
+.campo__text{
+    resize: none;
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: none;
+    font-size: 16px;
+}
+#send-message{
+    padding: 15px;
+    border-radius: 20px;
+}
+.contacto__aviso{
+    text-align: center;
+    color: red;
+    background-color: rgb(209, 146, 30);
+    width: 300px;
+    margin: 0 auto;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+@media (max-width: 700px){
+    .nav__label{
+        display: block;
+        cursor: pointer;
+    }
+    .nav__menu{
+        position: fixed;
+        top: 80px;
+        bottom: 0;
+        background: #9e7722;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0 at center);
+        transition: clip-path 0.5s ease-in-out;
+    }
+    .nav__input:checked + .nav__menu{
+        clip-path: circle(100% at center);
+    }
+    .section1__title{
+        width: 500px;
+        font-size: 14px;
+    }
+    .slider-frame{
+        width: 250px;
+        height: 150px;
+    }
+    .slider-frame__img{
+        width: 250px;
+        height: 150px;
+    }
+    .product-list{
+        font-size: 10.5px;
+    }
+    .campo__input{
+        width: 150px;
+        font-size: 15px;
+    }
+    .campo__text{
+        width: 400px;
+    }
+    .contacto__aviso{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 520px){
+    .section1__title{
+        width: 250px;
+        font-size: 14px;
+    }
+    .section1__img{
+        width: 120px;
+        height: 120px;
+    }
+    .section2__paragraph{
+        width: 260px;
+        font-size: 14px;
+    }
+    .product-list{
+        font-size: 9px
+    }
+    .contacto__title{
+        width: 300px;
+        font-size: 15px;
+    }
+    .campo__input{
+        font-size: 14px;
+        width: 140px;
+    }
+    .campo__text{
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    #send-message{
+        margin-bottom: 20px;
+    }
+    .contacto__aviso{
+        margin-bottom: 100px;
+    }
+
+}
+@media (max-width: 400px){
+    .campo__text{
+        font-size: 12px;
+        width: 300px;
+    }
+    .section1__img{
+        width: 80px;
+        height: 80px;
+    }
+    .slider-frame{
+        width: 100px;
+        height: 150px;
+    }
+    .slider-frame__img{
+        width: 100px;
+        height: 150px;
+    }
+}
