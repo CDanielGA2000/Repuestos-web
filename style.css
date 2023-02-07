@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(imagenes/different-car-accessories-assortment.jpg);
+    background-image: url(imagenes/fondo-1.gif);
     background-size: auto;
     background-repeat: no-repeat;
 }
@@ -51,7 +51,6 @@ body{
 .nav__input:checked + .nav__menu{
     background: #9e7722;
 }
-
 .nav__label, .nav__input{
     display: none;
 }
@@ -115,7 +114,6 @@ body{
     width: 378px;
     height: 278px;
 }
-
 @keyframes slider  {
     0% {margin-left: 0%;}
     14.28% {margin-left: 0%;}
@@ -138,23 +136,14 @@ body{
     85.68% {margin-left: -600%;}
     100% {margin-left: -600%;}
 }
-
 footer{
-    /*height: 150px;
-    position: relative;*/
     text-align: center;
     color: white;
 }
 .footer__h2{
-    /*position: absolute;
-    bottom: 0%;
-    left: 50%;
-    transform: translate(-50%, -50%);*/
     margin-top: 50px;
 }
-
 /* PAGINA DEL INVENTARIO */
-
 .product-list{
     width: 80%;
     height: auto;
@@ -176,9 +165,7 @@ footer{
 .price{
     color: red;
 }
-
 /* PAGINA DE CONTACTO */
-
 .contacto{
     padding: 22px;
 }
@@ -223,8 +210,12 @@ footer{
     font-size: 15px;
     border-radius: 20px;
 }
-
 @media (max-width: 700px){
+    body{
+        background-image: url(imagenes/fondo-tlf.gif);
+        background: cover;
+        background-position: 30%;
+    }
     .nav__label{
         display: block;
         cursor: pointer;
@@ -273,6 +264,10 @@ footer{
     }
 }
 @media (max-width: 520px){
+    body{
+        background-image: url(imagenes/fondo-tlf.gif);
+        background: cover;
+    }
     .section1__title{
         width: 250px;
         font-size: 14px;
@@ -290,7 +285,7 @@ footer{
     }
     .contacto__title{
         width: 300px;
-        font-size: 15px;
+        font-size: 12px;
     }
     .campo__input{
         font-size: 14px;
@@ -306,7 +301,6 @@ footer{
     .contacto__aviso{
         margin-bottom: 100px;
     }
-
 }
 @media (max-width: 400px){
     .campo__text{
@@ -314,15 +308,18 @@ footer{
         width: 300px;
     }
     .section1__img{
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     .slider-frame{
-        width: 100px;
-        height: 150px;
+        width: 140px;
+        height: 190px;
     }
     .slider-frame__img{
-        width: 100px;
-        height: 150px;
+        width: 140px;
+        height: 190px;
+    }
+    .contacto__aviso{
+        margin-bottom: 105px;
     }
 }
