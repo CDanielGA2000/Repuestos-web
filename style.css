@@ -269,11 +269,10 @@ body {
 }
 }
 @media (max-width: 700px){
-body{
-    background-image: url(imagenes/fondo-tlf.gif);
-    background: cover;
-    background-position: 40%;
-}
+    body {
+        background-size: cover;
+        background-position: 50%;
+    }
 .nav__label{
     display: block;
     cursor: pointer;
@@ -322,10 +321,10 @@ body{
 }
 }
 @media (max-width: 520px){
-body{
-    background-image: url(imagenes/fondo-tlf.gif);
-    background: cover;
-}
+    body {
+        background-size: cover;
+        background-position: 50%;
+    }
 .section1__title{
     width: 250px;
     font-size: 14px;
@@ -361,6 +360,10 @@ body{
 }
 }
 @media (max-width: 400px){
+    body {
+        background-size: cover;
+        background-position: 50%;
+    }
 .campo__text{
     font-size: 12px;
     width: 300px;
