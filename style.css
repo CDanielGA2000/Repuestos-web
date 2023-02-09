@@ -3,8 +3,11 @@
 }
 body{
     background-image: url(imagenes/fondo-1.gif);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    width: 100%;
 }
 .nav{
     background: rgba(209, 146, 30, 0.63);;
@@ -317,10 +320,10 @@ body {
 }
 }
 @media (max-width: 520px){
-    .nav__title{
-        font-size: 1.6em;
-        font-weight: 900;
-    }
+.nav__title{
+    font-size: 1.6em;
+    font-weight: 900;
+}
 .section1__title{
     width: 250px;
     font-size: 14px;
