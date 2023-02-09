@@ -269,7 +269,6 @@ body {
 }
 }
 @media (max-width: 700px){
-
 .nav__label{
     display: block;
     cursor: pointer;
@@ -318,6 +317,10 @@ body {
 }
 }
 @media (max-width: 520px){
+    .nav__title{
+        font-size: 1.6em;
+        font-weight: 900;
+    }
 .section1__title{
     width: 250px;
     font-size: 14px;
